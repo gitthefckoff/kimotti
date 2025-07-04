@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>똥싸는 고양이</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>버튼을 누르면 똥을 싸는 고양이</h1>
+        <div id="cat">
+            <svg width="200" height="200" viewBox="0 0 100 100">
+                <!-- Body -->
+                <path d="M 20 90 C 10 70, 10 50, 25 30 C 40 10, 60 10, 75 30 C 90 50, 90 70, 80 90 Z" fill="#f0e4d7"/>
+                <!-- Head -->
+                <circle cx="50" cy="40" r="25" fill="#f0e4d7"/>
+                <path d="M 50 15 A 25 25 0 0 1 75 40" fill="none" stroke="#d4c8be" stroke-width="2"/>
+                <!-- Ears -->
+                <path d="M 30 20 L 20 10 L 40 25 Z" fill="#f0e4d7" stroke="#d4c8be" stroke-width="1"/>
+                <path d="M 70 20 L 80 10 L 60 25 Z" fill="#f0e4d7" stroke="#d4c8be" stroke-width="1"/>
+                <!-- Eyes -->
+                <circle cx="40" cy="40" r="3" fill="black"/>
+                <circle cx="60" cy="40" r="3" fill="black"/>
+                <!-- Nose -->
+                <path d="M 48 48 L 52 48 L 50 52 Z" fill="#ff8a8a"/>
+                <!-- Whiskers -->
+                <path d="M 25 45 L 15 42" stroke="black" stroke-width="0.5"/>
+                <path d="M 25 48 L 15 48" stroke="black" stroke-width="0.5"/>
+                <path d="M 25 51 L 15 54" stroke="black" stroke-width="0.5"/>
+                <path d="M 75 45 L 85 42" stroke="black" stroke-width="0.5"/>
+                <path d="M 75 48 L 85 48" stroke="black" stroke-width="0.5"/>
+                <path d="M 75 51 L 85 54" stroke="black" stroke-width="0.5"/>
+                <!-- Tail -->
+                <path d="M 80 80 C 90 70, 100 60, 95 50" stroke="#d4c8be" stroke-width="5" fill="none"/>
+            </svg>
+        </div>
+        <button id="poop-button">똥 싸기</button>
+        <div id="poop-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
